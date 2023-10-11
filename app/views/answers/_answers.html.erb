@@ -1,0 +1,6 @@
+<%= turbo_stream_from 'answers' %>
+<section id="answers" data-channel="answers" data-question-id="<%= question.id %>">
+  <%= render question.answers %>
+</section>
+
+<%= render 'answers/new', question: question %>
